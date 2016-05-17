@@ -58,7 +58,7 @@ Histogram of total steps per day
 hist(sumTable$Steps, xlab="Steps", main = "Total steps per Day", col = "darkblue")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](figure/unnamed-chunk-5-1.png)<!-- -->
 
 Calculate the mean and median of the total number of steps taken per day
 
@@ -98,7 +98,7 @@ p <- ggplot(intervalTable, aes(x=interval, y=Avg), xlab = "Interval", ylab="Aver
 p + geom_line()+xlab("Interval")+ylab("Average number of steps")+ggtitle("Average number of steps per 5 minutes Interval") + geom_line(linetype = 5, color = "darkblue")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](figure/unnamed-chunk-9-1.png)<!-- -->
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -188,7 +188,7 @@ hist(sumTable$Steps, breaks=5, xlab="Steps", main = "Total steps per day with NA
 legend("topright", c("Imputed Data", "Non-NA Data"), fill=c("darkblue", "lightgrey") )
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-20-1.png)<!-- -->
+![](figure/unnamed-chunk-20-1.png)<!-- -->
 
 
 #5. Are there differences in activity patterns between weekdays and weekends?
@@ -212,5 +212,5 @@ xyplot(Avg~interval|DayCategory, data=intervalTable2, type="l",  layout = c(1,2)
        ylab="Average number of steps", xlab="Interval", col = "darkblue")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-23-1.png)<!-- -->
+![](figure/unnamed-chunk-23-1.png)<!-- -->
 
